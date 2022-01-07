@@ -48,8 +48,8 @@ background animation */
   
 .zoom-in-zoom-out {
 width:50vw;
-
-/* animation:zoom-in-zoom-out 20s ease-out infinite; */
+min-height:850px;
+ animation:zoom-in-zoom-out 20s ease-out infinite; */
 
 }
 
@@ -85,7 +85,7 @@ width:50vw;
     {
         position: absolute;
         z-index: 999;
-        margin: 0 auto;
+        margin:0  auto;
         right: 0;        
         text-align: center;
         top: 5%; /* Adjust this value to move the positioned div up and down */
@@ -101,28 +101,34 @@ width:50vw;
     z-index: 999;
     margin: 0 auto;
     right: 0;        
-    text-align: center;
-    top: 90%; /* Adjust this value to move the positioned div up and down */
+    top: 70%; /* Adjust this value to move the positioned div up and down */
     background: rgba(0, 0, 0, 0.8);
-    font-family: Arial,sans-serif;
     color: #fff;
+    font-family: PIXymbolsLCDW00-Regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
     width: 80%; /* Set the width of the positioned div */
  }
 
 
  .rssBlock{
     left:0px;
-    height: 64px;
+    height: 46px;
     background: #000000;
+    border-radius: 25px;
     position: absolute;
-    width:540px;
+    width:80%;
     overflow: hidden;
   }
   
   /*remove p*/
   .cnnContents {
     width:100%;
-    padding-top: 15px;
+    padding-top: 5px;
     margin:0 auto;
     white-space: nowrap;
     font-family: Roboto;
