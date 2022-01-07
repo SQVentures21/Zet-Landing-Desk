@@ -1,5 +1,6 @@
 
 @import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
 @font-face {font-family: "PIXymbols LCD  W00 Regular";
   src: url("b9dbfdab75a87427f11b07a3ef16efad.eot"); /* IE9*/
   src: url("b9dbfdab75a87427f11b07a3ef16efad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -20,7 +21,7 @@
 body
 {
     background-color: black;
-  max-height:100vh;
+  height:100vh;
 }
 
 a 
@@ -36,7 +37,7 @@ utility class */
   margin: 0 auto;
   padding: 0px !important;
   display: flex;
-  min-height:100vh;
+  height:100vh;
 
 }
 
@@ -57,6 +58,7 @@ background animation */
 .zoom-in-zoom-out {
 width:50vw;
 min-height:850px;
+max-height:100vh;
  animation:zoom-in-zoom-out 20s ease-out infinite; */
 
 }
@@ -87,6 +89,7 @@ min-height:850px;
     {
         position: relative;
         display: inline-block;
+        height:100vh;
     }
 
     .first > .animated-text
@@ -109,7 +112,7 @@ min-height:850px;
     z-index: 999;
     margin: 0 auto;
     right: 0;        
-    top: 70%; /* Adjust this value to move the positioned div up and down */
+   bottom:10%;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     font-family: PIXymbolsLCDW00-Regular;
@@ -139,11 +142,11 @@ min-height:850px;
     padding-top: 5px;
     margin:0 auto;
     white-space: nowrap;
-    font-family:"PIXymbols LCD  W00 Regular" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+   line-height: 36px;
 
   }
   
@@ -199,7 +202,7 @@ min-height:850px;
       background-repeat: no-repeat;
       width:50vw;
       z-index:9999;
-      min-height:100vh;
+      height:100vh;
 
 
   }
@@ -453,7 +456,7 @@ text-align: center
 
 .payments
 {
-margin-top:15vh;  
+margin-top:min(15vh,80px);  
 }
 .payments-img
 {
