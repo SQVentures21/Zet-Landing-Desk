@@ -26,7 +26,7 @@ body
 
 a 
 {
-    text-decoration: none;
+    text-decoration:none!important;
 }
 /* 
 utility class */
@@ -139,14 +139,17 @@ max-height:100vh;
   /*remove p*/
   .cnnContents {
     width:100%;
-    padding-top: 5px;
+    padding-top: 14px;
     margin:0 auto;
     white-space: nowrap;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-   line-height: 36px;
+    font-family:"PIXymbolsLCDW00-Regular" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color:#FED22A;
+    PIXymbolsLCDW00-Regular
+
 
   }
   
@@ -166,8 +169,8 @@ max-height:100vh;
   }
   /* scrolling-left is continuous/repeatly text */
   @keyframes scrolling-left1 {
-      0% {transform: translateX(100%);
-          -webkit-transform: translateX(100%);}
+      0% {transform: translateX(200%);
+          -webkit-transform: translateX(200%);}
         100% {transform: translateX(-100%);
             -webkit-transform: translateX(-100%);}
   }
@@ -395,17 +398,17 @@ color:#686B6C;
 
 .abs-1
 {
-  right:25px;
+  right:16px;
 }
 
 .abs-2
 {
-  right:34px;
+  right:26px;
 }
 
 .abs-3
 {
-  right:40px;
+  right:30px;
 }
 
 
@@ -418,12 +421,19 @@ color:#686B6C;
 }
 .button-r
 {
-height: 54px;
-width: 170px;
-border-radius: 8px;
-padding: 16px 32px 16px 32px;
-background-color:#F7CD28;
-text-align: center
+  height: 48px;
+  width: 151px;
+  border-radius: 8px;
+  padding: 16px 28px 16px 28px;
+  background-color:#F7CD28;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+
 ;
 
 }
@@ -448,7 +458,7 @@ text-align: center
 
 .extra
 {
-  left:3px;
+  left:6px;
 }
 
 @font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
