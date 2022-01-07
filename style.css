@@ -1,5 +1,13 @@
 
 @import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@font-face {font-family: "PIXymbols LCD  W00 Regular";
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot"); /* IE9*/
+  src: url("b9dbfdab75a87427f11b07a3ef16efad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff2") format("woff2"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.woff") format("woff"), /* chrome、firefox */
+  url("b9dbfdab75a87427f11b07a3ef16efad.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("b9dbfdab75a87427f11b07a3ef16efad.svg#PIXymbols LCD  W00 Regular") format("svg"); /* iOS 4.1- */
+};
 @font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
 *,
 *::before,
