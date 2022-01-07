@@ -1,0 +1,448 @@
+
+@import url(//db.onlinewebfonts.com/c/96875a9fe0adf6e3de5e6447b0447bf8?family=LCD+AT&T+Phone+Time/Date);
+@font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    background-color: black;
+  max-height:100vh;
+}
+
+a 
+{
+    text-decoration: none;
+}
+/* 
+utility class */
+.container
+{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px !important;
+  display: flex;
+  min-height:100vh;
+
+}
+
+
+
+.flex 
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+  }
+
+
+/* 
+background animation */
+  
+.zoom-in-zoom-out {
+width:50vw;
+
+/* animation:zoom-in-zoom-out 20s ease-out infinite; */
+
+}
+
+@keyframes zoom-in-zoom-out {
+0% {
+  transform: scale(1, 1);
+}
+50% {
+  transform: scale(1.1,1);
+}
+100% {
+  transform: scale(1, 1);
+}
+}
+
+
+
+/* text-slider animation */
+
+
+.animated-text
+{
+    background-color: black;
+}
+
+    .first
+    {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first > .animated-text
+    {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        right: 0;        
+        text-align: center;
+        top: 5%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 80%; /* Set the width of the positioned div */
+    }
+
+ .first > .animated-text-2
+ {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    right: 0;        
+    text-align: center;
+    top: 90%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 80%; /* Set the width of the positioned div */
+ }
+
+
+ .rssBlock{
+    left:0px;
+    height: 64px;
+    background: #000000;
+    position: absolute;
+    width:540px;
+    overflow: hidden;
+  }
+  
+  /*remove p*/
+  .cnnContents {
+    width:100%;
+    padding-top: 15px;
+    margin:0 auto;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+   line-height: 36px;
+
+  }
+  
+  .marqueeStyle {
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left1 20s linear infinite;
+    animation: scrolling-left1 20s linear infinite;
+  }
+  
+  .marqueeStyle2 {
+    display:inline-block;
+    /* Apply animation to this element */
+    -webkit-animation: scrolling-left2 20s linear infinite;
+    animation: scrolling-left2 20s linear infinite;
+    animation-delay: 10s;
+  }
+  /* scrolling-left is continuous/repeatly text */
+  @keyframes scrolling-left1 {
+      0% {transform: translateX(100%);
+          -webkit-transform: translateX(100%);}
+        100% {transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);}
+  }
+  @keyframes scrolling-left2 {
+      0% {transform: translateX(0%);
+          -webkit-transform: translateX(0%);}
+        100% {transform: translateX(-200%);
+            -webkit-transform: translateX(-200%);}
+  }
+  
+  @-webkit-keyframes scrolling-left1 {
+      0% {-webkit-transform: translateX(100%);}
+        100% {-webkit-transform: translateX(-100%);}
+  }
+  @-webkit-keyframes scrolling-left2 {
+      0% {-webkit-transform: translateX(0%);}
+        100% {-webkit-transform: translateX(-200%);}
+  }
+  
+
+  .zoom-in-zoom-out::after
+  {
+    background: linear-gradient(180deg, #e60000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(90deg);
+    z-index: 9999;
+  }
+
+  .second
+  {
+      background-image: url("assets/background+coins.webp");
+      background-position: top center;
+      background-repeat: no-repeat;
+      width:50vw;
+      z-index:9999;
+      min-height:100vh;
+
+
+  }
+
+  .logo
+  {
+    height: 128px;
+    width: 177px;
+    margin-top:22px;
+    margin-bottom:12vh;
+  }
+
+  .main-text
+  {
+    margin-bottom:32px;
+    
+  }
+  
+  .main-text-h1
+  {
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FED22A;
+
+    
+  }
+
+  .offer-p
+  {
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+       color:#686B6C;
+   
+
+  
+  }
+
+  .offer {
+
+    margin-bottom:8px;
+  }
+  
+
+  .count-down
+  {
+      color:white;
+      margin-bottom:40px;
+  }
+  
+  
+  .count
+  {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+     
+  }
+
+  .count-dots
+  {
+    display: flex;
+    margin:0 7px 0 2px;
+    padding-bottom: 30px;
+    font-size:40px;
+    margin-top:-5px;
+  }
+
+  .container-2
+  {
+      width:500px;
+      margin-inline:auto;
+  }
+
+
+ .day , .hour , .minute , .seconds
+{
+
+font-family: "LCD AT&T Phone Time/Date"; 
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+letter-spacing:5px;
+text-align: center;
+
+}
+
+
+.day-text
+{
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+color:#686B6C;
+}
+
+
+.steps
+{
+    display: flex;
+    justify-content: center;
+    gap:32px;
+    margin-bottom: 32px;
+}
+.step1 , .step2 , .step3
+{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    position: relative;
+    width:176px;
+    
+
+
+ 
+
+}
+
+.step1 , .step2 , .step3 > p
+{
+  
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+    
+    
+}
+
+
+
+.step-p
+{
+    
+    font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  top:20px;
+}
+
+.step-number-image-1
+{
+  width:58px;
+  height:80px;
+  margin-left:33px;
+}
+
+.step-number-image-2
+{
+  width:58px;
+  height:80px;
+  margin-left:38px;
+}
+
+
+.step-number-image-3
+{
+  width:58px;
+  height:80px;
+  margin-left:33px;
+}
+
+
+.abs-1
+{
+  right:25px;
+}
+
+.abs-2
+{
+  right:34px;
+}
+
+.abs-3
+{
+  right:40px;
+}
+
+
+
+
+
+.main-button
+{
+   margin-top: 32px; 
+}
+.button-r
+{
+height: 54px;
+width: 170px;
+border-radius: 8px;
+padding: 16px 32px 16px 32px;
+background-color:#F7CD28;
+text-align: center
+;
+
+}
+
+
+
+.second-container , .minute-container , .hour-container , .day-container
+{
+  position:relative;
+}
+.placeholder
+{
+  position: absolute;
+  color:#f5f1f15b;
+  top:0px;
+  z-index: 99;
+  font-size:42px;
+  font-family: "LCD AT&T Phone Time/Date";
+  letter-spacing:5px;
+ 
+}
+
+.extra
+{
+  left:3px;
+}
+
+@font-face {font-family: "LCD AT&T Phone Time/Date"; src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot"); src: url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.woff") format("woff"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/96875a9fe0adf6e3de5e6447b0447bf8.svg#LCD AT&T Phone Time/Date") format("svg"); }
+
+
+.payments
+{
+margin-top:15vh;  
+}
+.payments-img
+{
+  width:40vw;
+}
+
